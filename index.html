@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music System</title>
+    <link rel="icon" href="ico.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.jpg" alt="Spotify"></li>
+            <a href="index.html"> Home </a>
+            <a href="#about"> About </a>     
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="songList">
+         <h1>Best of the past - Golden Era Songs</h1>
+         <div class="sonItemContainer">
+            <div class="songItem">
+               <img src="cover1.jpg" alt="">
+            <span class="songName">O Mere Dil Ke Chain</span>
+               <span class="sonlistplay"><span class="timestamp">04:36 <i id="0" class="far songItemPlay fa-play-circle"></i></span></span>
+            </div>
+            <div class="songItem">
+                <img src="cover2.jpg" alt="">
+                <span class="songName">Mere Mehboob Qayamat Hogi</span>
+                <span class="sonlistplay"><span class="timestamp">03:51 <i id="1" class="far songItemPlay fa-play-circle"></i></span></span>
+             </div>
+             <div class="songItem">
+                <img src="cover3.jpg" alt="">
+                <span class="songName">Likhe jo Khat Tujhe</span>
+                <span class="sonlistplay"><span class="timestamp">04:34 <i id="2" class="far songItemPlay fa-play-circle"></i></span></span>
+             </div>
+             <div class="songItem">
+                <img src="cover4.jpg" alt="">
+                <span class="songName">Wada Karo Nahi</span>
+                <span class="sonlistplay"><span class="timestamp">05:14 <i id="3" class="far songItemPlay fa-play-circle"></i></span></span>
+             </div>
+             <div class="songItem">
+                <img src="cover5.jpg" alt="">
+                <span class="songName">Dilbar Mere</span>
+                <span class="sonlistplay"><span class="timestamp">04:48 <i id="4" class="far songItemPlay fa-play-circle"></i></span></span>
+             </div>
+             <div class="songItem">
+                <img src="cover6.jpg" alt="">
+                <span class="songName">Aapki Nazro ne Samjha</span>
+                <span class="sonlistplay"><span class="timestamp">03:54 <i id="5" class="far songItemPlay fa-play-circle"></i></span></span>
+             </div>
+             <div class="songItem">
+                <img src="cover7.jpg" alt="">
+                <span class="songName">Humein Tumse Pyaar Kitna</span>
+                <span class="sonlistplay"><span class="timestamp">04:01 <i id="6" class="far songItemPlay fa-play-circle"></i></span></span>
+             </div>
+             <div class="songItem">
+                <img src="cover8.jpg" alt="">
+                <span class="songName">Pyaar Hua Iqrar hua</span>
+                <span class="sonlistplay"><span class="timestamp">04:25 <i id="7" class="far songItemPlay fa-play-circle"></i></span></span>
+             </div>
+             <div class="songItem">
+                <img src="cover.jpg" alt="">
+                <span class="songName">Ek Ladki Bheegi Bhagi</span>
+                <span class="sonlistplay"><span class="timestamp">03:56 <i id="8" class="far songItemPlay fa-play-circle"></i></span></span>
+             </div>
+             <div class="songItem">
+                <img src="cover.jpg" alt="">
+                <span class="songName">Yeh Raat Bheegi Bheegi</span>
+                <span class="sonlistplay"><span class="timestamp">04:29 <i id="9" class="far songItemPlay fa-play-circle"></i></span></span>
+             </div>
+             
+         </div>
+
+        </div>
+         <div class="songBanner"></div>
+    </div>
+      
+
+    <section id="about"> 
+      <div>
+          <h2>About This Website</h2>
+          This is a website which is a clone of a music playing system. This website is designed through the concepts of HTML, CSS & JAVASCRIPT.
+          <br>
+         This website displays 10 songs of the THE GOLDEN ERA of Indian Music. On clicking the play button the first song will be played.
+            On clicking the next button which is beside the play/pause button, the next song in the queue will be played. 
+            The user can anytime play or pause the song being played by clicking on the play/pause button at the bottom as well as in the white bar also
+            where the song name is displayed.
+             Overall the designing of this website is a result of application of various concepts of Html and css along with the implementation
+         of rules of javascript. The basic structure of the webpage was constructed using the logics of Html. The designing part is completed by
+         using the features of css. And the dynamuc part of the website which includes the plying of songs on clicking the necessary icons
+         was completed using javascript. 
+      </p>
+      </div>
+  </section>
+
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        
+        <div class="icons">
+            <!-- fontawesome icons -->
+            <i class="fas fa-3x fa-step-backward" id="previous"></i>
+            <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+            <i class="fas fa-3x fa-step-forward" id="next"></i>
+        </div>
+        <span id="duration">0:00</span>
+        <div class="songInfo">
+            <img src="playing.gif" width="50px" alt="" id="gif"> <span id="masterSongName">O Mere Dil Ke Chain</span>
+        </div>
+    </div>
+    
+    
+    <footer>
+      <p>&copy; Musicplayersystem 2024 - Designed by Akshat Bhagat</p>
+  </footer>
+
+    <script src="https://kit.fontawesome.com/3dec4a5543.js" crossorigin="anonymous"></script>
+    <script src="Script.js"></script>
+</body>
+</html>
